@@ -1,6 +1,8 @@
 import mongoose from 'mongoose'
 
 const playerSchema = new mongoose.Schema({
+  name: { type: String, default: null },
+  photo: { type: String, default: null },
   level: { type: Number, default: 12 },
   xp: { type: Number, default: 790 },
   xpTotal: { type: Number, default: 1500 },
